@@ -21,9 +21,9 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-light-green/10 to-white/0 opacity-30" />
       
       <div className="container mx-auto px-4 md:px-8 py-20 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Text content - Takes 5 columns on large screens */}
-          <div className="text-left lg:col-span-5">
+          <div className="text-left lg:col-span-5 z-20">
             <div className="flex items-center gap-2 mb-4">
               <Leaf className="w-5 h-5 text-soft-green" />
               <span className="text-deep-blue font-medium text-sm">EKOLOJİK ENERJİ</span>
@@ -62,9 +62,9 @@ const HeroSection = () => {
             </button>
           </div>
           
-          {/* Image - Takes 7 columns on large screens with offset */}
-          <div className="lg:col-span-7 flex justify-center lg:justify-end animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            <div className="relative w-full lg:w-[90%] mx-auto transform scale-[140%] lg:scale-[165%] translate-x-[5%] lg:translate-x-[15%]">
+          {/* Image - Takes 7 columns on large screens with clear separation */}
+          <div className="lg:col-span-7 flex justify-end relative z-10 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+            <div className="w-full lg:w-[95%] relative">
               {/* Dashboard mockup */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
                 <img 

@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-electric-green to-deep-blue bg-clip-text text-transparent">
-              Remus Energy
+              Remus Enerji
             </h3>
             <p className="text-gray-400 mb-4 max-w-md">
               Yapay zeka destekli, blockchain güvenceli, yeşil elektriği mümkün olan en düşük fiyatlarla sunan enerji sektörünün devrimcisi.
@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-8 border-t border-gray-800 text-sm text-gray-400 flex flex-col md:flex-row md:justify-between items-center">
-          <p>© 2025 Remus Energy. Tüm hakları saklıdır.</p>
+          <p>© 2025 Remus Enerji. Tüm hakları saklıdır.</p>
           <p className="mt-2 md:mt-0">Dijital enerji tedarikçiniz</p>
         </div>
       </div>

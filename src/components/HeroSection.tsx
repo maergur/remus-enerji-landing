@@ -29,7 +29,7 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-deep-blue mb-6 animate-fade-in-up">
-              Remus Energy
+              Remus Enerji
               <span className="text-gray-600 text-2xl md:text-3xl mt-3 block font-normal">
                 Dijital Enerji Tedarikçiniz
               </span>
@@ -62,12 +62,12 @@ const HeroSection = () => {
           </div>
           
           <div className="flex justify-center lg:justify-end animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            <div className="relative w-full mx-auto transform scale-150"> {/* Added scale-150 (1.5x) and removed max-w-full constraint */}
+            <div className="relative w-full mx-auto transform scale-150 translate-x-[15%]"> {/* Added translate-x-[15%] to move 15% to the right */}
               {/* Dashboard mockup */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
                 <img 
                   src="/lovable-uploads/df0e9961-24f1-471b-8573-7e7ff27f2c50.png" 
-                  alt="Remus Energy Dashboard" 
+                  alt="Remus Enerji Dashboard" 
                   className="w-full h-auto"
                 />
               </div>

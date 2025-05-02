@@ -43,7 +43,7 @@ const Navbar = () => {
         <a href="#" className="flex items-center gap-2">
           <Leaf className="h-6 w-6 text-soft-green" />
           <span className="text-2xl font-bold text-deep-blue">
-            Remus Energy
+            Remus Enerji
           </span>
         </a>
         

@@ -27,7 +27,7 @@ const JoinUsSection = () => {
       setIsLoading(false);
       toast({
         title: "Başarılı!",
-        description: `Remus Energy'nin avantajlı fiyatlarına hoş geldiniz, ${email}!`,
+        description: `Remus Enerji'nin avantajlı fiyatlarına hoş geldiniz, ${email}!`,
       });
       setEmail('');
     }, 1000);
@@ -44,7 +44,7 @@ const JoinUsSection = () => {
           </div>
           
           <h2 className="section-title text-center">
-            <span className="text-soft-green">Remus Energy</span>'ye Hemen Katılın!
+            <span className="text-soft-green">Remus Enerji</span>'ye Hemen Katılın!
           </h2>
           
           <p className="section-subtitle text-center">
@@ -106,7 +106,7 @@ const JoinUsSection = () => {
                     <p className="font-medium">Ahmet Y.</p>
                   </div>
                 </div>
-                <p className="text-gray-600">"Remus Energy'ye geçtiğimden beri elektrik faturalarımda yıllık 7.800₺ tasarruf ettim. Basit ve kullanımı kolay bir sistem ile enerji tüketimimi takip edebiliyorum."</p>
+                <p className="text-gray-600">"Remus Enerji'ye geçtiğimden beri elektrik faturalarımda yıllık 7.800₺ tasarruf ettim. Basit ve kullanımı kolay bir sistem ile enerji tüketimimi takip edebiliyorum."</p>
               </div>
               <div className="bg-white p-4 rounded-lg shadow">
                 <div className="flex items-center mb-3">

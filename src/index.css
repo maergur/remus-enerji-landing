@@ -92,7 +92,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-poppins;
+    @apply bg-white text-foreground font-poppins;
   }
 
   .hover-scale {
@@ -100,12 +100,12 @@
   }
 
   .feature-card {
-    @apply bg-white rounded-xl p-6 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    @apply bg-white rounded-xl p-6 shadow-md border border-gray-100 transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
   }
 }
 
 .cta-button {
-  @apply bg-electric-green text-white font-semibold py-3 px-6 rounded-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1;
+  @apply bg-electric-green text-white font-medium py-3 px-6 rounded-full hover:shadow-md transition-all duration-300 hover:-translate-y-1;
 }
 
 .section-title {
@@ -118,7 +118,7 @@
 
 /* Custom underline animation for nav links */
 .nav-link {
-  @apply relative inline-block text-gray-800 transition-colors duration-300 hover:text-electric-green;
+  @apply relative inline-block transition-colors duration-300 hover:text-electric-green;
 }
 
 .nav-link::after {
@@ -128,4 +128,17 @@
 
 .nav-link:hover::after {
   @apply w-full;
+}
+
+/* Stat card styles */
+.stat-card {
+  @apply bg-white rounded-xl p-6 shadow-sm border border-gray-100;
+}
+
+.stat-value {
+  @apply text-3xl font-semibold text-deep-blue;
+}
+
+.stat-label {
+  @apply text-sm text-gray-500;
 }

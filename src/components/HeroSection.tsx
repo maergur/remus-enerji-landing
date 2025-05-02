@@ -15,70 +15,66 @@ const HeroSection = () => {
   return (
     <section 
       id="home" 
-      className="relative min-h-screen flex items-center bg-gradient-to-r from-deep-blue/90 to-electric-green/80 overflow-hidden pt-16"
+      className="relative min-h-screen flex items-center bg-white pt-16 overflow-hidden"
     >
-      <div className="absolute inset-0 bg-electric-green/5" />
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 bg-gradient-to-b from-light-green/30 to-white/0 opacity-50" />
       
-      {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-white/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-white/5 rounded-full blur-3xl" />
-      </div>
-      
-      <div className="container mx-auto px-4 py-20 relative z-10">
+      <div className="container mx-auto px-4 md:px-8 py-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-left">
             <div className="flex items-center gap-2 mb-4">
-              <Leaf className="w-6 h-6 text-light-green" />
-              <span className="text-light-green font-medium">%100 Yenilenebilir Enerji</span>
+              <Leaf className="w-5 h-5 text-electric-green" />
+              <span className="text-deep-blue font-medium text-sm">%100 YENİLENEBİLİR ENERJİ</span>
             </div>
             
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in-up">
-              Remus Energy <br />
-              <span className="text-white/90 text-2xl md:text-4xl mt-2 block">Dijital Enerji Tedarikçiniz</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-deep-blue mb-6 animate-fade-in-up">
+              Remus Energy
+              <span className="text-gray-600 text-2xl md:text-3xl mt-3 block font-normal">
+                Dijital Enerji Tedarikçiniz
+              </span>
             </h1>
             
-            <p className="text-xl text-white/80 mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            <p className="text-lg text-gray-600 mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
               Yapay zeka ve %100 yenilenebilir enerji kaynaklarıyla desteklenmiş 
               en avantajlı elektrik fiyatlarına hemen şimdi sahip olun.
             </p>
             
+            <div className="flex flex-wrap gap-4 mb-8">
+              <div className="bg-light-green/70 rounded-full px-5 py-2.5 flex items-center text-deep-blue">
+                <span className="font-medium">%100 Yenilenebilir</span>
+              </div>
+              <div className="bg-light-green/70 rounded-full px-5 py-2.5 flex items-center text-deep-blue">
+                <span className="font-medium">Ortalama %30 Tasarruf</span>
+              </div>
+              <div className="bg-light-green/70 rounded-full px-5 py-2.5 flex items-center text-deep-blue">
+                <span className="font-medium">Sözleşme Yok</span>
+              </div>
+            </div>
+            
             <button 
               onClick={scrollToJoin}
-              className="bg-white text-deep-blue font-bold text-lg py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 animate-pulse-glow"
+              className="bg-electric-green text-white font-medium text-lg py-3.5 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 hover:-translate-y-1"
             >
               Şimdi Geçiş Yap
               <ArrowRight className="w-5 h-5" />
             </button>
-            
-            <div className="mt-8 flex flex-wrap gap-4">
-              <div className="bg-white/10 backdrop-blur-sm p-3 px-5 rounded-full">
-                <p className="text-white text-sm">%100 Yenilenebilir Enerji</p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm p-3 px-5 rounded-full">
-                <p className="text-white text-sm">Ortalama %30 Tasarruf</p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm p-3 px-5 rounded-full">
-                <p className="text-white text-sm">Sözleşme Yok</p>
-              </div>
-            </div>
           </div>
           
           <div className="flex justify-center lg:justify-end animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            <div className="relative">
-              <img 
-                src="/lovable-uploads/954d197c-1594-41a8-91b0-5591c0b7e659.png" 
-                alt="Remus Energy Tablet Mockup" 
-                className="w-full h-auto max-w-md lg:max-w-lg mx-auto"
-              />
-              
-              <div className="absolute inset-[8.5%] top-[3.5%] overflow-hidden rounded-[14px]">
+            <div className="relative w-full max-w-xl mx-auto">
+              {/* Dashboard mockup */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
                 <img 
-                  src="/lovable-uploads/d773e683-761f-451c-8f4d-e45e9bbe1226.png" 
+                  src="/lovable-uploads/509e3e52-0a51-4654-afc7-34b09177c237.png" 
                   alt="Remus Energy Dashboard" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto"
                 />
               </div>
+
+              {/* Green highlight accent */}
+              <div className="absolute -z-10 top-10 -right-10 w-32 h-32 bg-electric-green/20 rounded-full blur-3xl"></div>
+              <div className="absolute -z-10 -left-10 bottom-10 w-32 h-32 bg-electric-green/20 rounded-full blur-3xl"></div>
             </div>
           </div>
         </div>

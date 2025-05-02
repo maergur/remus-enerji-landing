@@ -98,8 +98,8 @@ export default {
 						transform: 'scale(1)'
 					},
 					'50%': {
-						opacity: '0.85',
-						transform: 'scale(1.05)'
+						opacity: '0.95',
+						transform: 'scale(1.02)'
 					}
 				},
 				'fade-in-up': {

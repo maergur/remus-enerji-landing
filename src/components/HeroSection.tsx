@@ -22,8 +22,7 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-4 md:px-8 py-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left column with text content - improved responsive layout */}
-          <div className="text-left lg:order-1 order-2">
+          <div className="text-left">
             <div className="flex items-center gap-2 mb-4">
               <Leaf className="w-5 h-5 text-soft-green" />
               <span className="text-deep-blue font-medium text-sm">EKOLOJİK ENERJİ</span>
@@ -62,9 +61,8 @@ const HeroSection = () => {
             </button>
           </div>
           
-          {/* Right column with image - improved responsive layout */}
-          <div className="flex justify-center lg:justify-end animate-fade-in-up lg:order-2 order-1" style={{ animationDelay: "0.4s" }}>
-            <div className="relative w-full mx-auto transform scale-[165%] translate-x-[15%]">
+          <div className="flex justify-center lg:justify-end animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+            <div className="relative w-full mx-auto transform scale-[165%] translate-x-[15%]"> {/* Changed translation to 15% (5% more than 10%) */}
               {/* Dashboard mockup */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
                 <img 

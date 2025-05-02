@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, Laptop } from 'lucide-react';
+import { ArrowRight, Leaf } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollToJoin = () => {
@@ -28,6 +28,11 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-left">
+            <div className="flex items-center gap-2 mb-4">
+              <Leaf className="w-6 h-6 text-light-green" />
+              <span className="text-light-green font-medium">%100 Yenilenebilir Enerji</span>
+            </div>
+            
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in-up">
               Remus Energy <br />
               <span className="text-white/90 text-2xl md:text-4xl mt-2 block">Dijital Enerji Tedarikçiniz</span>
@@ -63,9 +68,13 @@ const HeroSection = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-electric-green/30 to-deep-blue/30 transform rotate-6 rounded-2xl blur-md"></div>
               <div className="relative bg-white/10 backdrop-blur-lg border border-white/20 p-5 rounded-2xl shadow-2xl transform -rotate-3">
-                <div className="bg-black/40 rounded-lg p-3">
-                  <Laptop size={280} className="w-full h-auto text-white" />
-                </div>
+                {/* Replace laptop with dashboard image */}
+                <img 
+                  src="/lovable-uploads/d773e683-761f-451c-8f4d-e45e9bbe1226.png" 
+                  alt="Remus Energy Dashboard" 
+                  className="w-full h-auto rounded-lg shadow-lg"
+                  style={{ maxWidth: "550px" }}
+                />
                 <div className="mt-4 text-white text-center">
                   <p className="font-bold">Remus Enerji Platformu</p>
                   <p className="text-sm text-white/80">Enerji tüketiminizi kontrol edin</p>

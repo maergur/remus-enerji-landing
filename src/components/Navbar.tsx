@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
+import { Leaf } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,6 +41,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center gap-2">
+          <Leaf className="h-6 w-6 text-electric-green" />
           <span className="text-2xl font-bold bg-gradient-to-r from-electric-green to-deep-blue bg-clip-text text-transparent">
             Remus Energy
           </span>

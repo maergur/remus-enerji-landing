@@ -63,10 +63,10 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Remus Energy için özel renkler
-				'electric-green': '#0EA5E9', // Renk değişti, şimdi mavi
-				'deep-blue': '#0C4A6E', // Koyu mavi
-				'light-green': '#BAE6FD', // Açık mavi
+				// Remus Energy için özel yeşil renkler
+				'electric-green': '#4ADE80', // Parlak yeşil
+				'deep-blue': '#166534', // Koyu yeşil
+				'light-green': '#DCFCE7', // Açık yeşil
 			},
 			fontFamily: {
 				'poppins': ['Poppins', 'sans-serif'],
@@ -121,7 +121,7 @@ export default {
 				'fade-in-up': 'fade-in-up 0.6s ease-out'
 			},
 			backgroundImage: {
-				'gradient-hero': 'linear-gradient(90deg, #0C4A6E 0%, #0EA5E9 100%)',
+				'gradient-hero': 'linear-gradient(90deg, #166534 0%, #4ADE80 100%)',
 			}
 		}
 	},

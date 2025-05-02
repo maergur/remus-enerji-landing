@@ -109,7 +109,7 @@
 }
 
 .cta-button {
-  @apply bg-gradient-to-r from-lumian-blue to-lumian-green text-white font-semibold py-3 px-6 rounded-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1;
+  @apply bg-lumian-green text-white font-semibold py-3 px-6 rounded-md hover:bg-opacity-90 transition-all duration-300;
 }
 
 .section-title {
@@ -120,16 +120,18 @@
   @apply text-lg text-gray-600 max-w-2xl mx-auto mb-10;
 }
 
-/* Custom underline animation for nav links */
-.nav-link {
-  @apply relative inline-block text-lumian-dark-gray transition-colors duration-300 hover:text-lumian-green;
+/* Decorative leaf elements */
+.leaf-decoration {
+  position: absolute;
+  opacity: 0.2;
+  z-index: 1;
 }
 
-.nav-link::after {
-  content: '';
-  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-lumian-green transition-all duration-300;
+/* Updated background for the hero section */
+.bg-lumian-blue {
+  background-color: #0A2640;
 }
 
-.nav-link:hover::after {
-  @apply w-full;
+.bg-lumian-green {
+  background-color: #00B67A;
 }

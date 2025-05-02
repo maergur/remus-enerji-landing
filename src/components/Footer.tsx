@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-inter font-bold mb-4 bg-gradient-to-r from-white to-lumian-green bg-clip-text text-transparent">
-              Lumian Energy
+              Lumian Enerji
             </h3>
             <p className="text-gray-300 mb-4 max-w-md font-ibm-plex">
-              Build a sustainable future with AI-powered energy management that helps businesses predict consumption, improve efficiency, and reduce CO₂ emissions.
+              Yapay zeka destekli enerji yönetimi ile işletmelerin tüketimi tahmin etmesine, verimliliği artırmasına ve CO₂ emisyonlarını azaltmasına yardımcı olarak sürdürülebilir bir gelecek inşa edin.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-lumian-green transition-colors">
@@ -33,29 +33,29 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-inter font-semibold mb-4">Company</h4>
+            <h4 className="text-lg font-inter font-semibold mb-4">Şirket</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors font-ibm-plex">About Us</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors font-ibm-plex">Careers</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors font-ibm-plex">Press</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors font-ibm-plex">Hakkımızda</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors font-ibm-plex">Kariyer</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors font-ibm-plex">Basın</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors font-ibm-plex">Blog</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-inter font-semibold mb-4">Resources</h4>
+            <h4 className="text-lg font-inter font-semibold mb-4">Kaynaklar</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors font-ibm-plex">Help Center</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors font-ibm-plex">Contact Us</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors font-ibm-plex">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors font-ibm-plex">Terms of Service</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors font-ibm-plex">Yardım Merkezi</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors font-ibm-plex">Bize Ulaşın</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors font-ibm-plex">Gizlilik Politikası</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors font-ibm-plex">Hizmet Koşulları</a></li>
             </ul>
           </div>
         </div>
         
         <div className="mt-12 pt-8 border-t border-gray-800 text-sm text-gray-400 flex flex-col md:flex-row md:justify-between items-center">
-          <p className="font-ibm-plex">© 2025 Lumian Energy. All rights reserved.</p>
-          <p className="mt-2 md:mt-0 font-ibm-plex">Powered by Lovable AI</p>
+          <p className="font-ibm-plex">© 2025 Lumian Enerji. Tüm hakları saklıdır.</p>
+          <p className="mt-2 md:mt-0 font-ibm-plex">Lovable AI tarafından desteklenmektedir</p>
         </div>
       </div>
     </footer>

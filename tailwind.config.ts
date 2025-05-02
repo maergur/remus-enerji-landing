@@ -63,9 +63,9 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Lumian Energy brand colors
-				'lumian-blue': '#0A3D62', // Deep blue for trust
-				'lumian-green': '#2ECC71', // Green for sustainability
+				// Lumian Energy brand colors updated to match example image
+				'lumian-blue': '#0A2640', // Darker blue from example
+				'lumian-green': '#00B67A', // Bright green from example
 				'lumian-gray': '#F5F5F5', // Light gray for clarity
 				'lumian-dark-gray': '#333333', // Dark gray for text
 				'lumian-yellow': '#F1C40F', // Yellow for energy accent
@@ -125,7 +125,7 @@ export default {
 				'fade-in-up': 'fade-in-up 0.6s ease-out'
 			},
 			backgroundImage: {
-				'gradient-hero': 'linear-gradient(90deg, #0A3D62 0%, #2ECC71 100%)',
+				'gradient-hero': 'linear-gradient(90deg, #0A2640 0%, #00B67A 100%)',
 			}
 		}
 	},

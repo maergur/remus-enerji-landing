@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -92,7 +92,11 @@
   }
 
   body {
-    @apply bg-background text-foreground font-poppins;
+    @apply bg-background text-foreground font-ibm-plex;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-inter font-bold;
   }
 
   .hover-scale {
@@ -105,11 +109,11 @@
 }
 
 .cta-button {
-  @apply bg-gradient-to-r from-electric-green to-deep-blue text-white font-semibold py-3 px-6 rounded-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1;
+  @apply bg-gradient-to-r from-lumian-blue to-lumian-green text-white font-semibold py-3 px-6 rounded-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1;
 }
 
 .section-title {
-  @apply text-3xl md:text-4xl font-bold mb-6 text-gray-800;
+  @apply text-3xl md:text-4xl font-bold mb-6 text-lumian-dark-gray;
 }
 
 .section-subtitle {
@@ -118,12 +122,12 @@
 
 /* Custom underline animation for nav links */
 .nav-link {
-  @apply relative inline-block text-gray-800 transition-colors duration-300 hover:text-electric-green;
+  @apply relative inline-block text-lumian-dark-gray transition-colors duration-300 hover:text-lumian-green;
 }
 
 .nav-link::after {
   content: '';
-  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-electric-green transition-all duration-300;
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-lumian-green transition-all duration-300;
 }
 
 .nav-link:hover::after {

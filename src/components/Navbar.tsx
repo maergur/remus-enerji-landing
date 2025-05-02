@@ -40,27 +40,27 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center gap-2">
-          <span className="text-2xl font-bold bg-gradient-to-r from-electric-green to-deep-blue bg-clip-text text-transparent">
-            EnergizeNow
+          <span className="text-2xl font-inter font-extrabold bg-gradient-to-r from-lumian-blue to-lumian-green bg-clip-text text-transparent">
+            Lumian Energy
           </span>
         </a>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <button onClick={() => scrollToSection('home')} className="nav-link">Home</button>
-          <button onClick={() => scrollToSection('features')} className="nav-link">Features</button>
-          <button onClick={() => scrollToSection('join')} className="nav-link">Join Us</button>
+          <button onClick={() => scrollToSection('home')} className="nav-link font-ibm-plex">Home</button>
+          <button onClick={() => scrollToSection('features')} className="nav-link font-ibm-plex">Features</button>
+          <button onClick={() => scrollToSection('join')} className="nav-link font-ibm-plex">Join Us</button>
           <button 
             onClick={() => scrollToSection('join')}
-            className="cta-button text-sm py-2 px-4"
+            className="cta-button text-sm py-2 px-4 font-ibm-plex"
           >
-            Get Cheapest Electricity
+            Start Saving Yesterday
           </button>
         </nav>
         
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-gray-800"
+          className="md:hidden text-lumian-dark-gray"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           <svg 
@@ -84,14 +84,14 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white shadow-md">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <button onClick={() => scrollToSection('home')} className="text-left py-2">Home</button>
-            <button onClick={() => scrollToSection('features')} className="text-left py-2">Features</button>
-            <button onClick={() => scrollToSection('join')} className="text-left py-2">Join Us</button>
+            <button onClick={() => scrollToSection('home')} className="text-left py-2 font-ibm-plex">Home</button>
+            <button onClick={() => scrollToSection('features')} className="text-left py-2 font-ibm-plex">Features</button>
+            <button onClick={() => scrollToSection('join')} className="text-left py-2 font-ibm-plex">Join Us</button>
             <button 
               onClick={() => scrollToSection('join')}
-              className="cta-button text-center"
+              className="cta-button text-center font-ibm-plex"
             >
-              Get Cheapest Electricity
+              Start Saving Yesterday
             </button>
           </div>
         </div>

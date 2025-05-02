@@ -63,7 +63,6 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Remus Energy için özel yeşil renkler
 				'electric-green': '#4ADE80', // Parlak yeşil
 				'deep-blue': '#166534', // Koyu yeşil
 				'light-green': '#DCFCE7', // Açık yeşil
@@ -119,9 +118,6 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'pulse-glow': 'pulse-glow 2s infinite',
 				'fade-in-up': 'fade-in-up 0.6s ease-out'
-			},
-			backgroundImage: {
-				'gradient-hero': 'linear-gradient(90deg, #166534 0%, #4ADE80 100%)',
 			}
 		}
 	},

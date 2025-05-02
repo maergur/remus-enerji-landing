@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, Leaf } from 'lucide-react';
 
@@ -15,18 +14,17 @@ const HeroSection = () => {
   return (
     <section 
       id="home" 
-      className="relative min-h-screen flex items-center bg-white pt-16 overflow-hidden"
+      className="relative flex items-center bg-white pt-20 overflow-hidden mb-16"
     >
       {/* Subtle background pattern */}
       <div className="absolute inset-0 bg-gradient-to-b from-light-green/10 to-white/0 opacity-30" />
       
-      <div className="container mx-auto px-4 md:px-8 py-20 relative z-10">
+      <div className="container mx-auto px-4 md:px-8 py-12 relative z-10 mt-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          {/* Text content - Takes 5 columns on large screens */}
-          <div className="text-left lg:col-span-5 z-20">
+          {/* Text content - Takes 4 columns on large screens */}
+          <div className="text-left lg:col-span-4 z-20">
             <div className="flex items-center gap-2 mb-4">
-              <Leaf className="w-5 h-5 text-soft-green" />
-              <span className="text-deep-blue font-medium text-sm">EKOLOJİK ENERJİ</span>
+             
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-deep-blue mb-6 animate-fade-in-up">
@@ -55,22 +53,21 @@ const HeroSection = () => {
             
             <button 
               onClick={scrollToJoin}
-              className="bg-soft-green text-white font-medium text-lg py-3.5 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 hover:-translate-y-1"
+              className="bg-soft-green text-white font-medium text-lg py-3.5 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 hover:-translate-y-1 hover:scale-105"
             >
               Şimdi Geçiş Yap
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>
           
-          {/* Image - Takes 7 columns on large screens with clear separation */}
-          <div className="lg:col-span-7 flex justify-end relative z-10 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            <div className="w-full lg:w-[95%] relative">
+          {/* Image - Takes 8 columns on large screens with clear separation */}
+          <div className="lg:col-span-8 flex justify-end relative z-10 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+            <div className="w-full lg:w-full relative">
               {/* Dashboard mockup */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-200">
                 <img 
                   src="/lovable-uploads/df0e9961-24f1-471b-8573-7e7ff27f2c50.png" 
                   alt="Remus Enerji Dashboard" 
-                  className="w-full h-auto"
                 />
               </div>
 

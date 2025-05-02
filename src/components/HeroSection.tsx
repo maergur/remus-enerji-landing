@@ -62,11 +62,11 @@ const HeroSection = () => {
           </div>
           
           <div className="flex justify-center lg:justify-end animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            <div className="relative w-full max-w-3xl mx-auto"> {/* Increased max-width from max-w-2xl to max-w-3xl */}
+            <div className="relative w-full max-w-full mx-auto"> {/* Changed to max-w-full for maximum width */}
               {/* Dashboard mockup */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
                 <img 
-                  src="/lovable-uploads/954d197c-1594-41a8-91b0-5591c0b7e659.png" 
+                  src="/lovable-uploads/df0e9961-24f1-471b-8573-7e7ff27f2c50.png" 
                   alt="Remus Energy Dashboard" 
                   className="w-full h-auto"
                 />

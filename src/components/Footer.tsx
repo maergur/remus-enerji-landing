@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-electric-green to-deep-blue bg-clip-text text-transparent">
-              EnergizeNow
+              Remus Energy
             </h3>
             <p className="text-gray-400 mb-4 max-w-md">
-              Revolutionizing the energy industry with AI-driven, blockchain-secured, green electricity at the lowest possible prices.
+              Yapay zeka destekli, blockchain güvenceli, yeşil elektriği mümkün olan en düşük fiyatlarla sunan enerji sektörünün devrimcisi.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-electric-green transition-colors">
@@ -33,29 +33,29 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Company</h4>
+            <h4 className="text-lg font-semibold mb-4">Şirket</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Careers</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Press</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Hakkımızda</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Kariyer</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Basın</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Resources</h4>
+            <h4 className="text-lg font-semibold mb-4">Kaynaklar</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Yardım Merkezi</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Bize Ulaşın</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Gizlilik Politikası</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Kullanım Şartları</a></li>
             </ul>
           </div>
         </div>
         
         <div className="mt-12 pt-8 border-t border-gray-800 text-sm text-gray-400 flex flex-col md:flex-row md:justify-between items-center">
-          <p>© 2025 EnergizeNow. All rights reserved.</p>
-          <p className="mt-2 md:mt-0">Powered by Lovable AI</p>
+          <p>© 2025 Remus Energy. Tüm hakları saklıdır.</p>
+          <p className="mt-2 md:mt-0">Dijital enerji tedarikçiniz</p>
         </div>
       </div>
     </footer>

@@ -63,10 +63,10 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for EnergizeNow
-				'electric-green': '#10B981',
-				'deep-blue': '#0EA5E9',
-				'light-green': '#A7F3D0',
+				// Remus Energy için özel renkler
+				'electric-green': '#0EA5E9', // Renk değişti, şimdi mavi
+				'deep-blue': '#0C4A6E', // Koyu mavi
+				'light-green': '#BAE6FD', // Açık mavi
 			},
 			fontFamily: {
 				'poppins': ['Poppins', 'sans-serif'],
@@ -121,7 +121,7 @@ export default {
 				'fade-in-up': 'fade-in-up 0.6s ease-out'
 			},
 			backgroundImage: {
-				'gradient-hero': 'linear-gradient(90deg, #10B981 0%, #0EA5E9 100%)',
+				'gradient-hero': 'linear-gradient(90deg, #0C4A6E 0%, #0EA5E9 100%)',
 			}
 		}
 	},

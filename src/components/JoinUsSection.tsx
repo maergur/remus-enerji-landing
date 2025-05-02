@@ -13,8 +13,8 @@ const JoinUsSection = () => {
     
     if (!email || !email.includes('@')) {
       toast({
-        title: "Invalid email",
-        description: "Please enter a valid email address",
+        title: "Geçersiz e-posta",
+        description: "Lütfen geçerli bir e-posta adresi girin",
         variant: "destructive",
       });
       return;
@@ -26,15 +26,15 @@ const JoinUsSection = () => {
     setTimeout(() => {
       setIsLoading(false);
       toast({
-        title: "Success!",
-        description: `You're set for the cheapest electricity, ${email}!`,
+        title: "Başarılı!",
+        description: `Remus Energy'nin avantajlı fiyatlarına hoş geldiniz, ${email}!`,
       });
       setEmail('');
     }, 1000);
   };
 
   return (
-    <section id="join" className="py-20">
+    <section id="join" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-center mb-6">
@@ -44,26 +44,26 @@ const JoinUsSection = () => {
           </div>
           
           <h2 className="section-title text-center">
-            Sign Up for the <span className="bg-gradient-to-r from-electric-green to-deep-blue bg-clip-text text-transparent">Cheapest Electricity</span> Today!
+            <span className="bg-gradient-to-r from-electric-green to-deep-blue bg-clip-text text-transparent">Remus Energy</span>'ye Hemen Katılın!
           </h2>
           
           <p className="section-subtitle text-center">
-            Join thousands of happy customers who are saving money while saving the planet. 
-            It takes less than 2 minutes to switch.
+            Hem para tasarrufu yapan hem de gezegeni koruyan binlerce mutlu müşterimize katılın.
+            Geçiş yapmak 2 dakikadan az sürer.
           </p>
           
-          <div className="bg-white rounded-xl shadow-xl p-8 mt-12">
+          <div className="bg-white/80 backdrop-blur-lg rounded-xl shadow-xl p-8 mt-12 border border-white/20">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
-                  Email Address
+                  E-posta Adresiniz
                 </label>
                 <input
                   type="email"
                   id="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="your@email.com"
+                  placeholder="e-posta@adresiniz.com"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-electric-green focus:border-electric-green outline-none transition-all"
                   required
                 />
@@ -79,43 +79,43 @@ const JoinUsSection = () => {
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                   </svg>
-                ) : "Join the Energy Revolution"}
+                ) : "Enerji Devrimine Katılın"}
               </button>
             </form>
             
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
               <div className="p-3 bg-gray-50 rounded-lg">
-                <p className="text-sm font-medium text-gray-600">No credit card required</p>
+                <p className="text-sm font-medium text-gray-600">Kredi kartı gerekmiyor</p>
               </div>
               <div className="p-3 bg-gray-50 rounded-lg">
-                <p className="text-sm font-medium text-gray-600">Cancel anytime</p>
+                <p className="text-sm font-medium text-gray-600">İstediğiniz zaman iptal edin</p>
               </div>
               <div className="p-3 bg-gray-50 rounded-lg">
-                <p className="text-sm font-medium text-gray-600">No switching fees</p>
+                <p className="text-sm font-medium text-gray-600">Geçiş ücreti yok</p>
               </div>
             </div>
           </div>
           
-          <div className="mt-10 bg-gray-50 rounded-xl p-6">
-            <h3 className="font-semibold text-xl mb-4 text-center">What our customers are saying</h3>
+          <div className="mt-10 bg-white/80 backdrop-blur-lg rounded-xl p-6 border border-white/20">
+            <h3 className="font-semibold text-xl mb-4 text-center">Müşterilerimiz Ne Diyor?</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white p-4 rounded-lg shadow">
                 <div className="flex items-center mb-3">
-                  <div className="h-8 w-8 rounded-full bg-electric-green/20 flex items-center justify-center text-electric-green font-bold">J</div>
+                  <div className="h-8 w-8 rounded-full bg-electric-green/20 flex items-center justify-center text-electric-green font-bold">A</div>
                   <div className="ml-3">
-                    <p className="font-medium">Jessica T.</p>
+                    <p className="font-medium">Ahmet Y.</p>
                   </div>
                 </div>
-                <p className="text-gray-600">"Since switching to EnergizeNow, I've saved over $400 a year on my electricity bills. The cheapest electricity without compromising on service."</p>
+                <p className="text-gray-600">"Remus Energy'ye geçtiğimden beri elektrik faturalarımda yıllık 7.800₺ tasarruf ettim. En iyi hizmeti en uygun fiyata alıyorum."</p>
               </div>
               <div className="bg-white p-4 rounded-lg shadow">
                 <div className="flex items-center mb-3">
                   <div className="h-8 w-8 rounded-full bg-deep-blue/20 flex items-center justify-center text-deep-blue font-bold">M</div>
                   <div className="ml-3">
-                    <p className="font-medium">Michael R.</p>
+                    <p className="font-medium">Meral K.</p>
                   </div>
                 </div>
-                <p className="text-gray-600">"I love knowing that I'm getting the cheapest electricity AND it's 100% renewable. The app makes it so easy to track my savings."</p>
+                <p className="text-gray-600">"En uygun elektrik fiyatlarını alırken aynı zamanda %100 yenilenebilir enerji kullandığımı bilmek harika. Uygulama tasarruflarımı takip etmemi çok kolaylaştırıyor."</p>
               </div>
             </div>
           </div>

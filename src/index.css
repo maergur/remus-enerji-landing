@@ -35,7 +35,7 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -109,7 +109,7 @@
 }
 
 .cta-button {
-  @apply bg-lumian-green text-white font-semibold py-3 px-6 rounded-md hover:bg-opacity-90 transition-all duration-300;
+  @apply bg-lumian-green text-white font-semibold py-3 px-6 rounded-lg hover:bg-opacity-90 transition-all duration-300;
 }
 
 .section-title {
@@ -120,18 +120,33 @@
   @apply text-lg text-gray-600 max-w-2xl mx-auto mb-10;
 }
 
-/* Decorative leaf elements */
-.leaf-decoration {
-  position: absolute;
-  opacity: 0.2;
-  z-index: 1;
-}
-
-/* Updated background for the hero section */
+/* Updated backgrounds */
 .bg-lumian-blue {
-  background-color: #0A2640;
+  background-color: #072A40;
 }
 
 .bg-lumian-green {
-  background-color: #00B67A;
+  background-color: #00C2A0;
+}
+
+/* Glassmorphism effects */
+.glass-card {
+  @apply backdrop-blur-md bg-white/10 border border-white/20 rounded-lg;
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }

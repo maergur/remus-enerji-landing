@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Laptop } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollToJoin = () => {
@@ -17,109 +17,111 @@ const HeroSection = () => {
       id="home" 
       className="relative min-h-screen flex items-center bg-lumian-blue pt-16 overflow-hidden"
     >
-      {/* Decorative elements - leaf shapes */}
-      <div className="absolute left-0 top-0">
-        <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M180 0C180 99.411 99.411 180 0 180V0H180Z" fill="#00B67A" fillOpacity="0.2"/>
-        </svg>
-      </div>
-      
-      <div className="absolute right-0 bottom-0">
-        <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M180 180C80.5888 180 0 99.411 0 0L180 0V180Z" fill="#00B67A" fillOpacity="0.2"/>
-        </svg>
-      </div>
+      {/* Decorative elements - subtle patterns */}
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMEI2N0EiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djZoLTZ2LTZoLTZ2LTZoNnYtNmg2djZoNnY2aC02eiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
 
-      {/* Decorative leaf elements */}
-      <div className="absolute bottom-10 right-10">
-        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M60.5 12C78.5 26 85.1667 52.5 86 64C69 60 44.5 72.5 34.5 80C12 64.8 4.33333 34.3333 2 20C22 20 48.5 2.5 60.5 12Z" fill="#00B67A" fillOpacity="0.2"/>
-        </svg>
-      </div>
-      
-      <div className="absolute top-40 right-20">
-        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="5" cy="5" r="5" fill="white" fillOpacity="0.5"/>
-        </svg>
-      </div>
-      
-      <div className="absolute top-80 left-40">
-        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="5" cy="5" r="5" fill="white" fillOpacity="0.5"/>
-        </svg>
-      </div>
-
-      <div className="container mx-auto px-4 py-20 z-10 flex flex-col md:flex-row items-center">
-        {/* Left Column - Image */}
-        <div className="w-full md:w-1/2 mb-10 md:mb-0">
-          <div className="rounded-lg overflow-hidden">
-            <img 
-              src="/lovable-uploads/bf5de377-9bd7-49ed-b039-ef51152dcb81.png" 
-              alt="Rüzgar türbini" 
-              className="w-full h-auto object-cover"
-            />
-          </div>
-        </div>
-        
-        {/* Right Column - Content */}
-        <div className="w-full md:w-1/2 text-left md:pl-10">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-inter font-bold text-white mb-6">
-            Gezegen için <span className="italic">iyi,</span><br />
-            cüzdanınız için <span className="italic">iyi</span>
-          </h1>
-          
-          <p className="text-lg md:text-xl text-white/80 mb-8 font-ibm-plex">
-            Akıllı teknolojimizle enerji tüketimini tahmin edin, verimliliği artırın ve CO₂ emisyonlarını azaltın
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 mb-10">
-            <button 
-              className="bg-lumian-green hover:bg-opacity-90 transition-colors text-white font-bold py-3 px-6 rounded-md"
-              onClick={scrollToJoin}
-            >
-              DAHA FAZLA OKU
-            </button>
+      <div className="container mx-auto px-4 py-20 z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          {/* Left Column - Content */}
+          <div className="text-left order-2 lg:order-1">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-inter font-bold text-white mb-6">
+              Daha Yeşil <span className="text-lumian-green">Enerji</span>, <br />
+              Daha Akıllı <span className="text-lumian-green">Teknoloji</span>
+            </h1>
             
-            <button 
-              onClick={scrollToJoin}
-              className="bg-blue-400 hover:bg-opacity-90 transition-colors text-white font-bold py-3 px-6 rounded-md flex items-center justify-center"
-            >
-              ŞİMDİ KATIL
-            </button>
+            <p className="text-lg text-white/80 mb-8 font-ibm-plex max-w-xl">
+              Yapay zeka destekli enerji çözümlerimizle tüketiminizi optimize edin, 
+              maliyetlerinizi düşürün ve karbon ayak izinizi azaltın.
+            </p>
+
+            <div className="flex items-center gap-4 mb-8">
+              <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg border border-white/20">
+                <span className="text-lumian-green font-bold">%30</span>
+                <p className="text-white text-sm">Enerji Tasarrufu</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg border border-white/20">
+                <span className="text-lumian-green font-bold">%25</span>
+                <p className="text-white text-sm">Maliyet Azalımı</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg border border-white/20">
+                <span className="text-lumian-green font-bold">%50</span>
+                <p className="text-white text-sm">CO₂ Azalımı</p>
+              </div>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4 mb-10">
+              <button 
+                className="bg-lumian-green hover:bg-opacity-90 transition-all text-white font-bold py-4 px-8 rounded-lg flex items-center gap-2"
+                onClick={scrollToJoin}
+              >
+                HEMEN BAŞLA
+                <ArrowRight size={16} />
+              </button>
+              
+              <button 
+                onClick={scrollToJoin}
+                className="border border-white/30 hover:bg-white/10 transition-all text-white font-bold py-4 px-8 rounded-lg"
+              >
+                DAHA FAZLA BİLGİ
+              </button>
+            </div>
+
+            <div className="flex items-center gap-4 text-white/60 text-sm">
+              <div className="flex items-center gap-2">
+                <svg className="h-5 w-5 text-lumian-green" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 13L9 17L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                Kolay kurulum
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="h-5 w-5 text-lumian-green" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 13L9 17L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                7/24 Destek
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="h-5 w-5 text-lumian-green" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 13L9 17L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                Anlık analizler
+              </div>
+            </div>
           </div>
           
-          {/* Contact button */}
-          <button 
-            onClick={scrollToJoin}
-            className="bg-blue-400 hover:bg-opacity-90 transition-colors text-white text-sm py-2 px-4 rounded-md font-ibm-plex"
-          >
-            Bize Ulaşın
-          </button>
-          
-          {/* Social Icons */}
-          <div className="flex mt-8 space-x-4">
-            <a href="#" className="bg-transparent border border-white/20 rounded-full p-2 hover:bg-white/10 transition-colors">
-              <svg className="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
-              </svg>
-            </a>
-            <a href="#" className="bg-transparent border border-white/20 rounded-full p-2 hover:bg-white/10 transition-colors">
-              <svg className="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-              </svg>
-            </a>
-            <a href="#" className="bg-transparent border border-white/20 rounded-full p-2 hover:bg-white/10 transition-colors">
-              <svg className="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-              </svg>
-            </a>
-            <a href="#" className="bg-transparent border border-white/20 rounded-full p-2 hover:bg-white/10 transition-colors">
-              <svg className="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M22.162 5.656a8.384 8.384 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.21 4.21 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.394 8.394 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 002.087-2.165z"/>
-              </svg>
-            </a>
+          {/* Right Column - MacBook Image */}
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+            <div className="relative">
+              <div className="absolute -inset-4 bg-lumian-green/20 blur-3xl rounded-full"></div>
+              <div className="relative bg-lumian-blue/80 backdrop-blur-sm p-4 rounded-xl border border-white/10 shadow-2xl">
+                <div className="relative">
+                  {/* MacBook frame */}
+                  <div className="relative z-10 rounded-t-xl overflow-hidden bg-gray-800 pt-4 pb-2 px-2">
+                    <div className="h-1.5 w-12 mx-auto mb-2 rounded-full bg-gray-700"></div>
+                    <div className="bg-gray-900 rounded-md overflow-hidden">
+                      <img 
+                        src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4MzU1ODY5NA&ixlib=rb-4.0.3&q=80&w=800" 
+                        alt="Lumian Enerji Dashboard"
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                  </div>
+                  {/* MacBook base */}
+                  <div className="relative z-20 bg-gradient-to-b from-gray-700 to-gray-800 h-4 -mt-1 mx-3 rounded-b-lg shadow-lg"></div>
+                  <div className="relative z-10 bg-gray-800 h-1 -mt-1 mx-10 rounded-b-lg shadow-lg"></div>
+                </div>
+                <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-4/5 h-1 bg-black/30 blur-md rounded-full"></div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+
+      {/* Floating decorative objects */}
+      <div className="absolute top-20 left-10">
+        <div className="h-24 w-24 bg-lumian-green/10 rounded-full blur-xl"></div>
+      </div>
+      <div className="absolute bottom-20 right-10">
+        <div className="h-32 w-32 bg-lumian-green/5 rounded-full blur-xl"></div>
       </div>
     </section>
   );

@@ -62,7 +62,7 @@ const HeroSection = () => {
           </div>
           
           <div className="flex justify-center lg:justify-end animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            <div className="relative w-full mx-auto transform scale-[165%] translate-x-[10%]"> {/* Increased scale to 165% (10% more than 150%) and changed translation to 10% (5% less than 15%) */}
+            <div className="relative w-full mx-auto transform scale-[165%] translate-x-[15%]"> {/* Changed translation to 15% (5% more than 10%) */}
               {/* Dashboard mockup */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
                 <img 

@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -35,7 +35,7 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -92,11 +92,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-ibm-plex;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-inter font-bold;
+    @apply bg-background text-foreground font-poppins;
   }
 
   .hover-scale {
@@ -109,44 +105,27 @@
 }
 
 .cta-button {
-  @apply bg-lumian-green text-white font-semibold py-3 px-6 rounded-lg hover:bg-opacity-90 transition-all duration-300;
+  @apply bg-gradient-to-r from-electric-green to-deep-blue text-white font-semibold py-3 px-6 rounded-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1;
 }
 
 .section-title {
-  @apply text-3xl md:text-4xl font-bold mb-6 text-lumian-dark-gray;
+  @apply text-3xl md:text-4xl font-bold mb-6 text-gray-800;
 }
 
 .section-subtitle {
   @apply text-lg text-gray-600 max-w-2xl mx-auto mb-10;
 }
 
-/* Updated backgrounds */
-.bg-lumian-blue {
-  background-color: #072A40;
+/* Custom underline animation for nav links */
+.nav-link {
+  @apply relative inline-block text-gray-800 transition-colors duration-300 hover:text-electric-green;
 }
 
-.bg-lumian-green {
-  background-color: #00C2A0;
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-electric-green transition-all duration-300;
 }
 
-/* Glassmorphism effects */
-.glass-card {
-  @apply backdrop-blur-md bg-white/10 border border-white/20 rounded-lg;
-}
-
-/* Animations */
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.animate-float {
-  animation: float 3s ease-in-out infinite;
+.nav-link:hover::after {
+  @apply w-full;
 }

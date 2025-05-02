@@ -63,17 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Lumian Energy brand colors updated to match example image
-				'lumian-blue': '#0A2640', // Darker blue from example
-				'lumian-green': '#00B67A', // Bright green from example
-				'lumian-gray': '#F5F5F5', // Light gray for clarity
-				'lumian-dark-gray': '#333333', // Dark gray for text
-				'lumian-yellow': '#F1C40F', // Yellow for energy accent
+				// Custom colors for EnergizeNow
+				'electric-green': '#10B981',
+				'deep-blue': '#0EA5E9',
+				'light-green': '#A7F3D0',
 			},
 			fontFamily: {
 				'poppins': ['Poppins', 'sans-serif'],
-				'inter': ['Inter', 'sans-serif'],
-				'ibm-plex': ['"IBM Plex Sans"', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -125,7 +121,7 @@ export default {
 				'fade-in-up': 'fade-in-up 0.6s ease-out'
 			},
 			backgroundImage: {
-				'gradient-hero': 'linear-gradient(90deg, #0A2640 0%, #00B67A 100%)',
+				'gradient-hero': 'linear-gradient(90deg, #10B981 0%, #0EA5E9 100%)',
 			}
 		}
 	},

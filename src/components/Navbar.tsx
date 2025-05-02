@@ -41,7 +41,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center gap-2">
-          <Leaf className="h-6 w-6 text-electric-green" />
+          <Leaf className="h-6 w-6 text-soft-green" />
           <span className="text-2xl font-bold text-deep-blue">
             Remus Energy
           </span>
@@ -54,7 +54,7 @@ const Navbar = () => {
           <button onClick={() => scrollToSection('join')} className="nav-link text-gray-700">Bize Katılın</button>
           <button 
             onClick={() => scrollToSection('join')}
-            className="bg-electric-green text-white font-medium py-2 px-6 rounded-full hover:shadow-md transition-all duration-300"
+            className="bg-soft-green text-white font-medium py-2 px-6 rounded-full hover:shadow-md transition-all duration-300"
           >
             Şimdi Geçiş Yap
           </button>
@@ -91,7 +91,7 @@ const Navbar = () => {
             <button onClick={() => scrollToSection('join')} className="text-left py-2 text-gray-700">Bize Katılın</button>
             <button 
               onClick={() => scrollToSection('join')}
-              className="bg-electric-green text-white font-medium py-2 px-6 rounded-full text-center"
+              className="bg-soft-green text-white font-medium py-2 px-6 rounded-full text-center"
             >
               Şimdi Geçiş Yap
             </button>

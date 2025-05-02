@@ -105,7 +105,7 @@
 }
 
 .cta-button {
-  @apply bg-electric-green text-white font-medium py-3 px-6 rounded-full hover:shadow-md transition-all duration-300 hover:-translate-y-1;
+  @apply bg-soft-green text-white font-medium py-3 px-6 rounded-full hover:shadow-md transition-all duration-300 hover:-translate-y-1;
 }
 
 .section-title {
@@ -118,12 +118,12 @@
 
 /* Custom underline animation for nav links */
 .nav-link {
-  @apply relative inline-block transition-colors duration-300 hover:text-electric-green;
+  @apply relative inline-block transition-colors duration-300 hover:text-soft-green;
 }
 
 .nav-link::after {
   content: '';
-  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-electric-green transition-all duration-300;
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-soft-green transition-all duration-300;
 }
 
 .nav-link:hover::after {

@@ -63,9 +63,9 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				'electric-green': '#4ADE80', // Parlak yeşil
-				'deep-blue': '#166534', // Koyu yeşil
-				'light-green': '#DCFCE7', // Açık yeşil
+				'soft-green': '#42A84F', // More balanced green
+				'deep-blue': '#166534', // Keeping deep green
+				'light-green': '#DCFCE7', // Keeping light green
 			},
 			fontFamily: {
 				'poppins': ['Poppins', 'sans-serif'],

@@ -62,7 +62,7 @@ const HeroSection = () => {
           </div>
           
           <div className="flex justify-center lg:justify-end animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            <div className="relative w-full max-w-2xl mx-auto">
+            <div className="relative w-full max-w-3xl mx-auto"> {/* Increased max-width from max-w-2xl to max-w-3xl */}
               {/* Dashboard mockup */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
                 <img 

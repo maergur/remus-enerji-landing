@@ -11,7 +11,7 @@ const Footer = () => {
               Remus Enerji
             </h3>
             <p className="text-gray-400 mb-4 max-w-md">
-              Yapay zeka destekli, blockchain güvenceli, yeşil elektriği mümkün olan en düşük fiyatlarla sunan enerji sektörünün devrimcisi.
+              Yapay zeka destekli, üst düzey veri güvenliği sunan, yeşil elektriği mümkün kılan en düşük fiyatları ile enerji sektörünün devrimcisi - Remus Enerji.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-electric-green transition-colors">
@@ -55,7 +55,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-gray-800 text-sm text-gray-400 flex flex-col md:flex-row md:justify-between items-center">
           <p>© 2025 Remus Enerji. Tüm hakları saklıdır.</p>
-          <p className="mt-2 md:mt-0">Dijital enerji tedarikçiniz</p>
+          <p className="mt-2 md:mt-0">Dijital enerji tedarikçiniz.</p>
         </div>
       </div>
     </footer>

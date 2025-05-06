@@ -1,7 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { Leaf } from 'lucide-react';
+import remusLogo from '../assets/remus-logo-2.svg';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,15 +35,13 @@ const Navbar = () => {
     <header 
       className={cn(
         "fixed w-full z-50 transition-all duration-300",
-        isScrolled ? "bg-white shadow-sm py-2" : "bg-transparent py-4"
+        isScrolled ? "bg-white shadow-sm" : "bg-transparent"
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#" className="flex items-center gap-2">
-          <Leaf className="h-6 w-6 text-soft-green" />
-          <span className="text-2xl font-bold text-deep-blue">
-            Remus Enerji
-          </span>
+        
+        <a href="#" className="flex items-center p-0">
+        <img src={remusLogo} alt="Remus Enerji Logo" style={{ height: '80px', width: '150px' }} />
         </a>
         
         {/* Desktop Navigation */}
@@ -54,7 +51,7 @@ const Navbar = () => {
           <button onClick={() => scrollToSection('join')} className="nav-link text-gray-700">Bize Katılın</button>
           <button 
             onClick={() => scrollToSection('join')}
-            className="bg-soft-green text-white font-medium py-2 px-6 rounded-full hover:shadow-md transition-all duration-300"
+            className="bg-deep-blue text-white font-medium py-2 px-6 rounded-full hover:shadow-md transition-all duration-300"
           >
             Şimdi Geçiş Yap
           </button>
@@ -91,7 +88,7 @@ const Navbar = () => {
             <button onClick={() => scrollToSection('join')} className="text-left py-2 text-gray-700">Bize Katılın</button>
             <button 
               onClick={() => scrollToSection('join')}
-              className="bg-soft-green text-white font-medium py-2 px-6 rounded-full text-center"
+              className="bg-deep-blue text-white font-medium py-2 px-6 rounded-full text-center"
             >
               Şimdi Geçiş Yap
             </button>

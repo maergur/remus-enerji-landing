@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { useToast } from "@/hooks/use-toast";
-import { Leaf } from 'lucide-react';
+import appIcon from '../assets/remus-logo-vector.svg';
 
 const JoinUsSection = () => {
   const [email, setEmail] = useState('');
@@ -38,13 +38,13 @@ const JoinUsSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-center mb-6">
-            <div className="w-16 h-16 rounded-full bg-light-green flex items-center justify-center">
-              <Leaf className="h-8 w-8 text-soft-green" />
+            <div className="w-16 h-16 rounded-full bg-light-green flex items-center justify-center shadow-lg">
+              <img src={appIcon} alt="Remus Enerji Logo" className="w-10 h-10" />
             </div>
           </div>
           
           <h2 className="section-title text-center">
-            <span className="text-soft-green">Remus Enerji</span>'ye Hemen Katılın!
+            <span className="text-deep-blue">Remus Enerji</span>'ye Hemen Katılın!
           </h2>
           
           <p className="section-subtitle text-center">
@@ -72,7 +72,7 @@ const JoinUsSection = () => {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-soft-green text-white font-medium py-4 px-6 rounded-full hover:shadow-md transition-all duration-300 flex items-center justify-center"
+                className="w-full bg-deep-blue text-white font-medium py-4 px-6 rounded-full hover:shadow-md transition-all duration-300 flex items-center justify-center"
               >
                 {isLoading ? (
                   <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -110,7 +110,7 @@ const JoinUsSection = () => {
               </div>
               <div className="bg-white p-4 rounded-lg shadow">
                 <div className="flex items-center mb-3">
-                  <div className="h-8 w-8 rounded-full bg-deep-blue/20 flex items-center justify-center text-deep-blue font-bold">M</div>
+                  <div className="h-8 w-8 rounded-full bg-soft-green/20 flex items-center justify-center text-soft-green font-bold">M</div>
                   <div className="ml-3">
                     <p className="font-medium">Meral K.</p>
                   </div>

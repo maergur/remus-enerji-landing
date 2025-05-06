@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Leaf } from 'lucide-react';
+import proDashboard from '../assets/remus-pro-dashboard.png';
 
 const HeroSection = () => {
   const scrollToJoin = () => {
@@ -66,7 +67,7 @@ const HeroSection = () => {
               {/* Dashboard mockup */}
               <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-200">
                 <img 
-                  src="../src/assets/remus-pro-dashboard.png" 
+                  src={proDashboard}
                   alt="Remus Enerji Dashboard" 
                   className="w-full h-auto"
                 />

@@ -15,12 +15,12 @@ const HeroSection = () => {
   return (
     <section 
       id="home" 
-      className="relative flex items-center bg-white pt-20 overflow-hidden mb-16"
+      className="relative flex items-center bg-white pt-10 md:pt-20 overflow-hidden mb-16"
     >
       {/* Subtle background pattern */}
       <div className="absolute inset-0 bg-gradient-to-b from-light-green/10 to-white/0 opacity-30" />
       
-      <div className="container mx-auto px-4 md:px-8 py-12 relative z-10 mt-10">
+      <div className="container mx-auto px-4 md:px-8 py-8 md:py-12 relative z-10 mt-6 md:mt-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Text content - Takes 4 columns on large screens */}
           <div className="text-left lg:col-span-4 z-20">

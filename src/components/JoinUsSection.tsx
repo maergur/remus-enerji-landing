@@ -34,7 +34,7 @@ const JoinUsSection = () => {
   };
 
   return (
-    <section id="join" className="py-20 bg-gray-50">
+    <section id="join" className="py-18 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-center mb-6">

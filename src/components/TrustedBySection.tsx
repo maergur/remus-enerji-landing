@@ -42,7 +42,7 @@ const TrustedBySection = () => {
                 <img 
                   src={logo.src} 
                   alt={logo.alt} 
-                  className={`max-h-8 w-20 object-contain filter grayscale ${logo.customClassName || ''}`} 
+                  className={`max-h-10 w-20 object-contain filter grayscale ${logo.customClassName || ''}`} 
                 />
               </div>
             ))}
